@@ -1,0 +1,9 @@
+.env 
+airflow_venv/
+airflow_home/logs/
+*.pyp
+airflow_home/airflow.db
+airflow_home/simple_auth_manager_passwords.json.generated
+__pycache__/
+scripts/__pycache__
+.pyp
