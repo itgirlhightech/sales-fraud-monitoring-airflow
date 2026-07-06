@@ -1,11 +1,17 @@
 from airflow import DAG 
-from airflow.operators.python import PythonOperator
+from airflow.providers.standard.operators.python import PythonOperator
 from datetime import datetime as dt
 
 import os
-from dotoenv import load_dotenv
-import psycopg2
+import sys
+import psycopg 
+from dotenv import load_dotenv
 import logging
+
+PROJECT_ROOT = os.path.abspath(
+    os.path.join(os.path.dirname(__file__), "../..")
+)
+sys.path.insert(0, PROJECT_ROOT)
 
 from src.scripts.extract import extract
 from src.scripts.transform import transform
@@ -24,17 +30,19 @@ def run_daily_report():
 
     load_dotenv() 
 
-    conn = psycopg2.connect( 
+    conn = psycopg.connect( 
         host=os.getenv("DB_HOST"),
         database=os.getenv("DB_NAME"),
         user=os.getenv("DB_USER"),
-        password=os.gentenv("DB_PASSWORD"),
+        password=os.getenv("DB_PASSWORD"),
         port=os.getenv("DB_PORT")
     )
 
     cursor = conn.cursor()
 
-    with open("src/sql/daily_report.sql", "r") as  file:
+    sql_path = os.path.join(PROJECT_ROOT, "src", "sql", "daily_report.sql")
+
+    with open(sql_path, "r") as  file:
         sql_file = file.read()
         queries = sql_file.split(";")
 
@@ -65,7 +73,7 @@ with DAG(
 ) as dag:
     
     etl_task = PythonOperator(
-        task_id= "run_elt",
+        task_id= "run_etl",
         python_callable=run_etl
     )
 
