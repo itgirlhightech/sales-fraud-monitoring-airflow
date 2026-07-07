@@ -31,10 +31,10 @@ def run_daily_report():
     load_dotenv() 
 
     conn = psycopg.connect( 
-        host=os.getenv("DB_HOST"),
-        database=os.getenv("DB_NAME"),
+        dbname=os.getenv("DB_NAME"),
         user=os.getenv("DB_USER"),
         password=os.getenv("DB_PASSWORD"),
+        host=os.getenv("DB_HOST"),
         port=os.getenv("DB_PORT")
     )
 
