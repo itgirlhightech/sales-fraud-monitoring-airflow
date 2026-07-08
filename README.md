@@ -67,7 +67,7 @@ sales-fraud-monitoring-airflow/
 └── README.md
 ```
 
-!(<assets/Captura de tela 2026-07-07 192324.png>)
+![tree](<assets/Captura de tela 2026-07-07 192324.png>)
 ---
 
 ## Pipeline Architecture
@@ -107,18 +107,18 @@ Credit Card Dataset (CSV)
 
 ### Airflow Dashboard
 
-!(assets/Captura de tela 2026-07-07 192623.png)
+![dash](<assets/Captura de tela 2026-07-07 192623.png>)
 ---
 
 ### DAG Graph
 
-!(<assets/fraud_monitoring_dag-graph.png>)
+![graph](<assets/fraud_monitoring_dag-graph.png>)
 
 ---
 
 ### DAG Grid
 
-!![alt text](<assets/Captura de tela 2026-07-07 192717.png>)
+![grid](<assets/Captura de tela 2026-07-07 192717.png>)
 
 ---
 
