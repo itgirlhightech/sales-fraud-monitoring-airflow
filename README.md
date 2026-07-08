@@ -112,7 +112,7 @@ Credit Card Dataset (CSV)
 
 ### DAG Graph
 
-!(assets/fraud_monitoring_dag-graph.png)
+!(<assets/fraud_monitoring_dag-graph.png>)
 
 ---
 
