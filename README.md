@@ -118,11 +118,12 @@ Credit Card Dataset (CSV)
 
 ### DAG Grid
 
-<<<<<<< HEAD
+
 ![grid](<assets/Captura de tela 2026-07-07 192717.png>)
-=======
+
+
 !![grid](<assets/Captura de tela 2026-07-07 192717.png>)
->>>>>>> 9f47daa (docs: update readme)
+
 
 ---
 
