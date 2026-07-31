@@ -122,7 +122,7 @@ Credit Card Dataset (CSV)
 ![grid](<assets/Captura de tela 2026-07-07 192717.png>)
 
 
-!![grid](<assets/Captura de tela 2026-07-07 192717.png>)
+![grid](<assets/Captura de tela 2026-07-07 192717.png>)
 
 
 ---
