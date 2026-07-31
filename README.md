@@ -129,7 +129,7 @@ Credit Card Dataset (CSV)
 
 ### SQL Reports
 
-!![sql reports](<assets/sql_reports.png>)
+![sql reports](<assets/sql_reports.png>)
 
 
 ## Data Source
